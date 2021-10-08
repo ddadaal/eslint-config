@@ -1,0 +1,31 @@
+{
+  "name": "@ddadaal/eslint-config",
+  "version": "1.0.0",
+  "description": "My eslint config",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddadaal/eslintrc.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": {
+    "name": "Chen Junda",
+    "email": "ddadaal@outlook.com",
+    "url": "https://ddadaal.me"
+  },
+  "scripts": {
+    "postinstall": "echo \"Install dependencies with \n npm install -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser\""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": ">=4",
+    "@typescript-eslint/parser": ">=4",
+    "typescript": "^4.4.3"
+  },
+  "peerDependencies": {
+    "eslint": ">=7"
+  }
+}
