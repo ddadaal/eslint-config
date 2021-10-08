@@ -17,7 +17,7 @@
     "url": "https://ddadaal.me"
   },
   "scripts": {
-    "postinstall": "echo \"Install dependencies with \n npm install -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser\""
+    "release": "standard-version"
   },
   "license": "MIT",
   "dependencies": {
@@ -27,5 +27,8 @@
   },
   "peerDependencies": {
     "eslint": ">=7"
+  },
+  "devDependencies": {
+    "standard-version": "^9.3.1"
   }
 }
