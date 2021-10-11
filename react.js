@@ -1,7 +1,8 @@
 module.exports = {
   "extends": [
     "plugin:react/recommended",
-    "./index.js"
+    "./index.js",
+    "plugin:react/jsx-runtime"
   ],
   "plugins": [
     "react"
