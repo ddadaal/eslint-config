@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/ddadaal/eslintrc/compare/v1.1.1...v1.1.2) (2021-10-27)
+
+
+### Bug Fixes
+
+* update package dependencies ([efa7846](https://github.com/ddadaal/eslintrc/commit/efa7846602208393dd2c7b219769bbddb33217fd))
+
 ### [1.1.1](https://github.com/ddadaal/eslintrc/compare/v1.1.0...v1.1.1) (2021-10-11)
 
 
