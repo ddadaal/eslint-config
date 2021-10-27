@@ -21,13 +21,15 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/parser": ">=4",
+    "@typescript-eslint/parser": "^5.2.0",
     "typescript": "^4.4.3"
   },
+  "optionalDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4 || ^5",
+    "eslint-plugin-react": "^7"
+  },
   "peerDependencies": {
-    "eslint": ">=7",
-    "eslint-plugin-react": ">=7",
-    "@typescript-eslint/eslint-plugin": ">=4"
+    "eslint": "^7 || ^8"
   },
   "devDependencies": {
     "standard-version": "^9.3.1"
