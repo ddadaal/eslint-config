@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/ddadaal/eslintrc/compare/v1.2.1...v1.3.0) (2022-04-07)
+
+
+### Features
+
+* disable import/no-unresolved ([e623298](https://github.com/ddadaal/eslintrc/commit/e6232984400e233b114baab22f040642d0255d4f))
+
 ### [1.2.1](https://github.com/ddadaal/eslintrc/compare/v1.2.0...v1.2.1) (2022-04-07)
 
 ## [1.2.0](https://github.com/ddadaal/eslintrc/compare/v1.1.3...v1.2.0) (2022-04-07)
