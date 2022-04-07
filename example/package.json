@@ -22,9 +22,10 @@
     "license": "MIT",
     "dependencies": {
         "@ddadaal/eslint-config": "file:..",
-        "eslint": "^7 || ^8",
+        "@types/node": "^17.0.23",
         "@typescript-eslint/eslint-plugin": "^4 || ^5",
-        "typescript": "^4.4.3",
-        "eslint-plugin-react": "^7"
+        "eslint": "^7 || ^8",
+        "eslint-plugin-react": "^7",
+        "typescript": "^4.4.3"
     }
 }
