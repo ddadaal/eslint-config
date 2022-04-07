@@ -1,0 +1,30 @@
+{
+    "name": "@ddadaal/eslint-config-example",
+    "version": "1.1.3",
+    "description": "Example project of my eslint config",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ddadaal/eslintrc.git"
+    },
+    "keywords": [
+        "eslint",
+        "eslintconfig"
+    ],
+    "author": {
+        "name": "Chen Junda",
+        "email": "ddadaal@outlook.com",
+        "url": "https://ddadaal.me"
+    },
+    "scripts": {
+        "release": "standard-version"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@ddadaal/eslint-config": "file:..",
+        "eslint": "^7 || ^8",
+        "@typescript-eslint/eslint-plugin": "^4 || ^5",
+        "typescript": "^4.4.3",
+        "eslint-plugin-react": "^7"
+    }
+}
