@@ -31,6 +31,7 @@ module.exports = {
     "@typescript-eslint/no-inferrable-types": "off",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
+    "import/no-unresolved": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {
