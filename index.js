@@ -72,6 +72,43 @@ module.exports = {
       {
         "code": 120
       }
-    ]
+    ],
+    "space-infix-ops": "error",
+    "keyword-spacing": "error",
+    "space-in-parens": [
+      "error",
+      "never"
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "semi-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "space-unary-ops": [
+      "error",
+      {
+        "words": true,
+        "nonwords": false
+      }
+    ],
+    "spaced-comment": [
+      "error",
+      "always"
+    ],
+    "space-before-blocks": [
+      "error",
+      "always"
+    ],
+    "no-whitespace-before-property": "error"
   }
 }
