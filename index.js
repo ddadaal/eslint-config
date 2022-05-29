@@ -73,13 +73,18 @@ module.exports = {
         "code": 120
       }
     ],
-    "space-infix-ops": "error",
+
+    "space-infix-ops": "off",
+    "@typescript-eslint/space-infix-ops": "error",
+
     "keyword-spacing": "error",
     "space-in-parens": [
       "error",
       "never"
     ],
-    "space-before-function-paren": [
+
+    "space-before-function-paren": "off",
+    "@typescript-eslint/space-before-function-paren": [
       "error",
       {
         "anonymous": "never",
@@ -87,6 +92,10 @@ module.exports = {
         "asyncArrow": "always"
       }
     ],
+
+    "comma-spacing": "off",
+    "@typescript-eslint/comma-spacing": ["error"],
+
     "semi-spacing": [
       "error",
       {
@@ -105,10 +114,13 @@ module.exports = {
       "error",
       "always"
     ],
-    "space-before-blocks": [
+
+    "space-before-blocks": "off",
+    "@typescript-eslint/space-before-blocks": [
       "error",
       "always"
     ],
+
     "no-whitespace-before-property": "error"
   }
 }
