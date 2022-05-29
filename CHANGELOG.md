@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/ddadaal/eslintrc/compare/v1.4.0...v1.5.0) (2022-05-29)
+
+
+### Features
+
+* use typescript counterparts of some  rules ([e516d0b](https://github.com/ddadaal/eslintrc/commit/e516d0b8ce0d4ec179ba4d3246aa2aba327db507))
+
 ## [1.4.0](https://github.com/ddadaal/eslintrc/compare/v1.3.0...v1.4.0) (2022-05-25)
 
 
