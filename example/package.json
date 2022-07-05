@@ -23,9 +23,9 @@
     "dependencies": {
         "@ddadaal/eslint-config": "file:..",
         "@types/node": "^17.0.23",
-        "@typescript-eslint/eslint-plugin": "^4 || ^5",
-        "eslint": "^7 || ^8",
-        "eslint-plugin-react": "^7",
+        "@typescript-eslint/eslint-plugin": "^5.30.5",
+        "eslint": "^8.19.0",
+        "eslint-plugin-react": "^7.30.1",
         "typescript": "^4.4.3"
     }
 }

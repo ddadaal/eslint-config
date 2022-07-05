@@ -1,5 +1,5 @@
 import os from "os";
-import { FormatInputPathObject,PlatformPath } from "path";
+import { FormatInputPathObject, PlatformPath } from "path";
 
 export const test = () => {/* */};
 
