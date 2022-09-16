@@ -114,12 +114,16 @@ module.exports = {
       "error",
       "always"
     ],
-
+    "block-spacing": "error",
+    "no-multi-spaces": "error",
     "space-before-blocks": "off",
     "@typescript-eslint/space-before-blocks": [
       "error",
       "always"
     ],
+
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "off",
 
     "no-whitespace-before-property": "error"
   }
