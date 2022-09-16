@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/ddadaal/eslintrc/compare/v1.5.2...v1.6.0) (2022-09-16)
+
+
+### Features
+
+* use pnpm and update deps and requirements ([2d48c47](https://github.com/ddadaal/eslintrc/commit/2d48c474853699ff2a5c707824598dcccf972374))
+
 ### [1.5.2](https://github.com/ddadaal/eslintrc/compare/v1.1.5...v1.5.2) (2022-09-16)
 
 ### [1.5.1](https://github.com/ddadaal/eslintrc/compare/v1.1.4...v1.5.1) (2022-07-05)
