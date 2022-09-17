@@ -126,7 +126,6 @@ module.exports = {
     "@typescript-eslint/no-empty-function": "off",
 
     "no-whitespace-before-property": "error",
-    "arrow-body-style": ["error", "as-needed"],
     "arrow-spacing": "error"
   }
 }
