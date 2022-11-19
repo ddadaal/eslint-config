@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/ddadaal/eslintrc/compare/v1.8.0...v1.9.0) (2022-11-19)
+
+
+### Features
+
+* add @typescript-eslint/type-annotation-spacing ([50a4141](https://github.com/ddadaal/eslintrc/commit/50a4141f759a5c57d2919c9efe105020fca09593))
+
 ## [1.8.0](https://github.com/ddadaal/eslintrc/compare/v1.7.1...v1.8.0) (2022-10-15)
 
 
