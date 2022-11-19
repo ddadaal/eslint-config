@@ -8,3 +8,5 @@ export const another = 1;
 
 // comment
 export const noExtraSpace = 1;
+
+export const testTypeAnnotation = (a: string) => {};

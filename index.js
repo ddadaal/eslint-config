@@ -77,6 +77,8 @@ module.exports = {
     "space-infix-ops": "off",
     "@typescript-eslint/space-infix-ops": "error",
 
+    "@typescript-eslint/type-annotation-spacing": "error",
+
     "keyword-spacing": "error",
     "space-in-parens": [
       "error",
