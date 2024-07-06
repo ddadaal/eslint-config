@@ -2,26 +2,54 @@ const simpleImportSort = require("eslint-plugin-simple-import-sort");
 const js = require("@eslint/js");
 const tseslint = require("typescript-eslint");
 const stylistic = require("@stylistic/eslint-plugin");
+const globals = require("globals");
+
+const mapToTsFilesOnly = (configArray) => configArray.map((config) => ({
+    ...config,
+    files: ["**/*.ts", "**/*.tsx"]
+}));
 
 module.exports = [
     js.configs.recommended,
-    ...tseslint.configs.recommendedTypeChecked,
-    ...tseslint.configs.stylisticTypeChecked,
+    ...mapToTsFilesOnly(tseslint.configs.recommendedTypeChecked),
+    ...mapToTsFilesOnly(tseslint.configs.stylisticTypeChecked),
     {
-        ignores: ["**/eslint.config.js"],
         languageOptions: {
-            parser: tseslint.parser,
-            parserOptions: {
-                project: true,
-                tsconfigRootDir: process.cwd(),
+            globals: {
+                ...globals.browser,
+                ...globals.node,
             },
         }
     },
     {
         files: ["**/*.ts", "**/*.tsx"],
+        name: "languageOptions",
+        languageOptions: {
+            parser: tseslint.parser,
+            parserOptions: {
+                projectService: true,
+                tsconfigRootDir: process.cwd(),
+            },
+        }
+    },
+    {
+        name: "simple-import-sort",
+        plugins: {
+          "simple-import-sort": simpleImportSort,
+        },
+        rules: {
+          "simple-import-sort/imports": "error",
+          "simple-import-sort/exports": "error",
+        },
+    },
+
+
+    {
+        files: ["**/*.ts", "**/*.tsx"],
+
+        name: "stylistic",
 
         plugins: {
-            "simple-import-sort": simpleImportSort,
             "@stylistic": stylistic,
         },
 
@@ -33,17 +61,12 @@ module.exports = [
             "@typescript-eslint/ban-ts-comment": "off",
             "@typescript-eslint/ban-types": "off",
             "@typescript-eslint/no-explicit-any": "off",
-            "@typescript-eslint/no-non-null-assertion": "off",
-            "@typescript-eslint/no-inferrable-types": "off",
 
             "@typescript-eslint/no-unused-vars": ["warn", {
                 varsIgnorePattern: "^_",
                 argsIgnorePattern: "^_",
                 ignoreRestSiblings: true,
             }],
-
-            "simple-import-sort/imports": "error",
-            "simple-import-sort/exports": "error",
 
             "@stylistic/arrow-parens": ["error", "always"],
             "@stylistic/quotes": ["error", "double"],

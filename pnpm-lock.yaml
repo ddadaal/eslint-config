@@ -24,7 +24,7 @@ importers:
         specifier: 15.8.0
         version: 15.8.0
       typescript-eslint:
-        specifier: 8.0.0-alpha.39
+        specifier: rc-v8
         version: 8.0.0-alpha.39(eslint@9.6.0)(typescript@5.5.3)
     optionalDependencies:
       eslint-plugin-react:
