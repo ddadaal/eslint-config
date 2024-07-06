@@ -1,33 +1,46 @@
 # @ddadaal/eslint-config
 
-My eslint config.
+My eslint config. 
+
+Since `v2.0`, only eslint v9 is supported. Please stick to `v1` if you cannot upgrade to eslint v9 yet.
 
 # Installation
 
 ## Normal TypeScript Project
 
 ```bash
-npm install -D @ddadaal/eslint-config eslint @typescript-eslint/eslint-plugin
+npm install -D @ddadaal/eslint-config eslint
 ```
 
-Then create `.eslintrc` with the following content:
+Then create `eslint.config.js` with the following content:
 
-```json
-{
-    "extends": "@ddadaal"
-}
+```js
+const base = require("@ddadaal/eslint-config");
+
+module.exports = [
+    ...base,
+]
 ```
 
 ## React
 
+First, set up the project as a normal TypeScript project, and then
+
 ```bash
-npm install -D @ddadaal/eslint-config eslint @typescript-eslint/eslint-plugin eslint-plugin-react
+# Install more packages
+npm install -D eslint eslint-plugin-react
 ```
 
-```json
-{
-    "extends": "@ddadaal/eslint-config/react"
-}
+```js
+const base = require("@ddadaal/eslint-config");
+// Add
+const react = require("@ddadaal/eslint-config/react");
+
+module.exports = [
+    ...base,
+    // Add
+    ...react
+]
 ```
 
 # License

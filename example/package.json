@@ -17,19 +17,16 @@
         "url": "https://ddadaal.me"
     },
     "scripts": {
-        "release": "standard-version"
+        "release": "standard-version",
+        "lint": "eslint"
     },
     "license": "MIT",
     "dependencies": {
         "@ddadaal/eslint-config": "file:..",
         "@types/node": "18.7.18",
-        "@typescript-eslint/eslint-plugin": "5.37.0",
-        "@typescript-eslint/parser": "5.37.0",
-        "eslint": "8.23.1",
-        "eslint-plugin-react": "7.31.8",
-        "typescript": "4.8.3",
-        "eslint-plugin-import": "2.26.0",
-        "eslint-plugin-simple-import-sort": "8.0.0",
-        "eslint-import-resolver-typescript": "3.5.1"
+        "eslint": "9.6.0",
+        "eslint-plugin-react": "7.34.3",
+        "typescript": "5.5.3",
+        "@types/react": "18.3.3"
     }
 }

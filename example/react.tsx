@@ -7,14 +7,12 @@ export const A = () => {
   );
 
   return (
-
     <div
       style={{}}
       className=""
-      test="1"
     >
-      <p test="1"></p>
-      <p test="1"></p>
+      <p></p>
+      <p></p>
       {a}
     </div>
   );

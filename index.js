@@ -1,133 +1,98 @@
-module.exports = {
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  },
-  "extends": [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:import/recommended",
-    "plugin:import/typescript",
-  ],
-  "plugins": [
-    "@typescript-eslint",
-    "simple-import-sort",
-    "import"
-  ],
-  "settings": {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+const simpleImportSort = require("eslint-plugin-simple-import-sort");
+const js = require("@eslint/js");
+const tseslint = require("typescript-eslint");
+const stylistic = require("@stylistic/eslint-plugin");
+
+module.exports = [
+    js.configs.recommended,
+    ...tseslint.configs.recommendedTypeChecked,
+    ...tseslint.configs.stylisticTypeChecked,
+    {
+        ignores: ["**/eslint.config.js"],
+        languageOptions: {
+            parser: tseslint.parser,
+            parserOptions: {
+                project: true,
+                tsconfigRootDir: process.cwd(),
+            },
+        }
     },
-  },
-  "rules": {
-    "@typescript-eslint/camelcase": "off",
-    "@typescript-eslint/no-empty-interface": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/ban-ts-comment": "off",
-    "@typescript-eslint/ban-types": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-non-null-assertion": "off",
-    "@typescript-eslint/no-inferrable-types": "off",
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
-    "import/no-unresolved": "off",
-    "@typescript-eslint/no-unused-vars": [
-      "warn",
-      {
-        "varsIgnorePattern": "^_",
-        "argsIgnorePattern": "^_",
-        "ignoreRestSiblings": true
-      }
-    ],
-    "arrow-parens": [
-      "error",
-      "always"
-    ],
-    "quotes": [
-      "error",
-      "double"
-    ],
-    "comma-dangle": [
-      "error",
-      "always-multiline"
-    ],
-    "object-curly-spacing": [
-      "error",
-      "always",
-      {
-        "arraysInObjects": false
-      }
-    ],
-    "semi": [
-      "error",
-      "always"
-    ],
-    "indent": [
-      "error",
-      2
-    ],
-    "max-len": [
-      "error",
-      {
-        "code": 120
-      }
-    ],
+    {
+        files: ["**/*.ts", "**/*.tsx"],
 
-    "space-infix-ops": "off",
-    "@typescript-eslint/space-infix-ops": "error",
+        plugins: {
+            "simple-import-sort": simpleImportSort,
+            "@stylistic": stylistic,
+        },
 
-    "@typescript-eslint/type-annotation-spacing": "error",
+        rules: {
+            "@typescript-eslint/camelcase": "off",
+            "@typescript-eslint/no-empty-interface": "off",
+            "@typescript-eslint/explicit-function-return-type": "off",
+            "@typescript-eslint/explicit-module-boundary-types": "off",
+            "@typescript-eslint/ban-ts-comment": "off",
+            "@typescript-eslint/ban-types": "off",
+            "@typescript-eslint/no-explicit-any": "off",
+            "@typescript-eslint/no-non-null-assertion": "off",
+            "@typescript-eslint/no-inferrable-types": "off",
 
-    "keyword-spacing": "error",
-    "space-in-parens": [
-      "error",
-      "never"
-    ],
+            "@typescript-eslint/no-unused-vars": ["warn", {
+                varsIgnorePattern: "^_",
+                argsIgnorePattern: "^_",
+                ignoreRestSiblings: true,
+            }],
 
-    "space-before-function-paren": "off",
-    "@typescript-eslint/space-before-function-paren": [
-      "error",
-      {
-        "anonymous": "never",
-        "named": "never",
-        "asyncArrow": "always"
-      }
-    ],
+            "simple-import-sort/imports": "error",
+            "simple-import-sort/exports": "error",
 
-    "comma-spacing": "off",
-    "@typescript-eslint/comma-spacing": ["error"],
+            "@stylistic/arrow-parens": ["error", "always"],
+            "@stylistic/quotes": ["error", "double"],
+            "@stylistic/comma-dangle": ["error", "always-multiline"],
 
-    "semi-spacing": [
-      "error",
-      {
-        "before": false,
-        "after": true
-      }
-    ],
-    "space-unary-ops": [
-      "error",
-      {
-        "words": true,
-        "nonwords": false
-      }
-    ],
-    "spaced-comment": [
-      "error",
-      "always"
-    ],
-    "block-spacing": "error",
-    "no-multi-spaces": "error",
-    "space-before-blocks": "off",
-    "@typescript-eslint/space-before-blocks": [
-      "error",
-      "always"
-    ],
+            "@stylistic/object-curly-spacing": ["error", "always", {
+                arraysInObjects: false,
+            }],
 
-    "no-empty-function": "off",
-    "@typescript-eslint/no-empty-function": "off",
+            "@stylistic/semi": ["error", "always"],
+            "@stylistic/indent": ["error", 2],
 
-    "no-whitespace-before-property": "error",
-    "arrow-spacing": "error"
-  }
-}
+            "@stylistic/max-len": ["error", {
+                code: 120,
+            }],
+
+            "@stylistic/space-infix-ops": "error",
+
+            "@stylistic/type-annotation-spacing": "error",
+
+            "@stylistic/keyword-spacing": "error",
+            "@stylistic/space-in-parens": ["error", "never"],
+
+            "@stylistic/space-before-function-paren": ["error", {
+                anonymous: "never",
+                named: "never",
+                asyncArrow: "always",
+            }],
+
+            "@stylistic/semi-spacing": ["error", {
+                before: false,
+                after: true,
+            }],
+
+            "@stylistic/space-unary-ops": ["error", {
+                words: true,
+                nonwords: false,
+            }],
+
+            "@stylistic/spaced-comment": ["error", "always"],
+            "@stylistic/block-spacing": "error",
+            "@stylistic/no-multi-spaces": "error",
+            "@stylistic/space-before-blocks": ["error", "always"],
+
+            "no-empty-function": "off",
+            "@typescript-eslint/no-empty-function": "off",
+
+            "@stylistic/no-whitespace-before-property": "error",
+            "@stylistic/arrow-spacing": "error",
+        },
+    }
+]
