@@ -6,7 +6,7 @@ const globals = require("globals");
 
 module.exports = [
     js.configs.recommended,
-    ...tseslint.configs.recommendedTypeChecked,
+    ...tseslint.configs.strictTypeChecked,
     ...tseslint.configs.stylisticTypeChecked,
     {
         languageOptions: {
@@ -27,7 +27,11 @@ module.exports = [
     },
     {
         files: ['**/*.js'],
-        extends: [tseslint.configs.disableTypeChecked],
+        ...tseslint.configs.disableTypeChecked,
+        rules: {
+            ...tseslint.configs.disableTypeChecked.rules,
+            "@typescript-eslint/no-require-imports": "off",
+        }
     },
     {
         name: "simple-import-sort",
