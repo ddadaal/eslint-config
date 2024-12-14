@@ -24,13 +24,6 @@ module.exports = [
 
 ## React
 
-First, set up the project as a normal TypeScript project, and then
-
-```bash
-# Install more packages
-npm install -D eslint eslint-plugin-react
-```
-
 ```js
 const base = require("@ddadaal/eslint-config");
 // Add

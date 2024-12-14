@@ -1,1 +1,1 @@
-import { another,test } from "./index";
+import { another, test } from './index';
