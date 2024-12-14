@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/ddadaal/eslintrc/compare/v2.1.0...v2.2.0) (2024-12-14)
+
+
+### Features
+
+* simplify and make configuration strict ([f4e4002](https://github.com/ddadaal/eslintrc/commit/f4e400227f5e2949c17780c6d92c95d88c5667a1))
+
 ## [2.1.0](https://github.com/ddadaal/eslintrc/compare/v2.0.0...v2.1.0) (2024-07-06)
 
 
