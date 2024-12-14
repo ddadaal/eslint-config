@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/ddadaal/eslintrc/compare/v2.2.0...v2.3.0) (2024-12-14)
+
+
+### Features
+
+* use strict typed checked ([742ac3e](https://github.com/ddadaal/eslintrc/commit/742ac3ef606eae578aeb167355dd274dd5cbcd1d))
+
 ## [2.2.0](https://github.com/ddadaal/eslintrc/compare/v2.1.0...v2.2.0) (2024-12-14)
 
 
